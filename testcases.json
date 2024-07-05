@@ -1,0 +1,435 @@
+{
+  "LoginScreen": [
+    {
+      //login correct details
+      "test": "loginCorrectDetails",
+      "email": "krishnakamera789@gmail.com",
+      "password": "123456"
+    },
+    {
+      //wrong password and correct email
+      "test": "loginWrongPassword",
+      "password": "12345678"
+    },
+    {
+      //email without @
+      "test": "loginNo@",
+      "email": "pranay.prasadcelllabs.com"
+    },
+    {
+      //email without .
+      "test": "loginNo.",
+      "email": "pranay.prasad@celllabscom"
+    },
+    {
+      //wrong email & Correct password
+      "test": "loginWrongEmail",
+      "email": "pranay.prasad123@celllabs.com"
+    },
+    {
+      //correct phone number and correct password
+      "test": "loginCorrectPhone",
+      "phoneNumber": "9160513671"
+    },
+    {
+      //Compare to current version
+      "test": "loginVersion",
+      "version": "V 3.1.0"
+    }
+  ],
+  "ForgotScreen": [
+    {
+      //0.correct email, name & phone
+      "test": "forgotCorrectDetails",
+      "lastName": "kris",
+      "phoneNumber": "3671",
+      "email": "krishnakamera789@gmail.com"
+    },
+    {
+      //1.Wrong name, correct phone & email
+      "test": "forgotWrongLastName",
+      "lastName": "localTest"
+    },
+    {
+      //2.Wrong phone, correct name & email
+      "test": "forgotWrongPhone",
+      "phoneNumber": "3752"
+    },
+    {
+      //3.Wrong email, correct name & phone
+      "test": "forgotWrongEmail",
+      "email": "pranay.prasad123@celllabs.com"
+    },
+    {
+      //4.passwords don't match
+      "test": "forgotNoMatch",
+      "password": "123456",
+      "confirmPassword": "1234567"
+    },
+    {
+      //5.Passwords match but are fewer than 6 characters
+      "test": "forgotLessChars",
+      "password": "12345",
+      "confirmPassword": "12345"
+    },
+    {
+      //6.passwords match   --> enter new password
+      "test": "forgotPasswordMatch",
+      "password": "1234567",
+      "confirmPassword": "1234567"
+    }
+  ],
+  "AccountScreen": [
+    {
+      //0.valid account details
+      "test": "AccountLogin",
+      "email": "krishnakamera@gmail.com",
+      "password": "123456",
+      "firstName": "krishna",
+      "lastName": "kris",
+      "phoneNumber": "9160513672"
+    },
+    {
+      //1.first name with numbers
+      "test": "AccFirstNameNumbers",
+      "firstName": "Celllabs1"
+    },
+    {
+      //2.first name with symbols
+      "test": "AccFirstNameSymbols",
+      "firstName": "Celllabs$"
+    },
+    {
+      //3.first name with spaces
+      "test": "AccFirstNameSpaces",
+      "firstName": "Celllabs local"
+    },
+    {
+      //4.last name with numbers
+      "test": "AccLastNameNumbers",
+      "lastName": "Systems123"
+    },
+    {
+      //5.last name with symbols
+      "test": "AccLastNameSymbols",
+      "lastName": "Syst@ms"
+    },
+    {
+      //6.last name with spaces
+      "test": "AccLastNameSpaces",
+      "lastName": "Syste ms"
+    },
+    {
+      //7.short password
+      "test": "AccShortPassword",
+      "password": "1234"
+    },
+    {
+      //8.incorrect password
+      "test": "AccIncorrectPassword",
+      "password": "12345678"
+    },
+    {
+      //9.correct details --> enter new valid firstName or LastName
+      "test": "AccCorrectName",
+      "firstName": "krishnaa",
+      "lastName": "kris"
+    },
+    {
+      //10.email without @ symbol
+      "test": "AccEmailWithout@",
+      "email": "pranay.prasadcellabs.com",
+      "confirmEmail": "pranay.prasadcellabs.com"
+    },
+    {
+      //11.email without .
+      "test": "AccEmailWithout.",
+      "email": "pranay.prasad@celllabscom",
+      "confirmEmail": "pranay.prasad@celllabscom"
+    },
+    {
+      //12.different emails
+      "test": "AccDiffEmails",
+      "email": "pranay.prasad@cellabs.com",
+      "confirmEmail": "pranay.prasad123@cellabs.com"
+    },
+    {
+      //13.short password
+      "test": "AccEmailShortPwd",
+      "password": "12345"
+    },
+    {
+      //14.wrong password
+      "test": "AccEmailWrongPwd",
+      "password": "12345678"
+    },
+    {
+      //15.correct details --> enter new email
+      "test": "AccEmailCorrectInfo",
+      "email": "krishnakamera789@gmail.com",
+      "confirmEmail": "krishnakamera789@gmail.com"
+    },
+    {
+      //16.phone number with less than 10 digits
+      "test": "AccPhoneLessDigits",
+      "phoneNumber": "879004289",
+      "confirmPhoneNumber": "879004289"
+    },
+    {
+      //17.different phone numbers
+      "test": "AccPhoneNumbersDiff",
+      "phoneNumber": "9790042890",
+      "confirmPhoneNumber": "8790042890"
+    },
+    {
+      //18.phone short password
+      "test": "AccPhoneShortPwd",
+      "password": "12345"
+    },
+    {
+      //19.phone wrong password
+      "test": "AccPhoneWrongPwd",
+      "password": "12345678"
+    },
+    {
+      //20.phone correct details --> enter new Phone Number
+      "test": "AccPhoneCorrectDetails",
+      "phoneNumber": "9160513671",
+      "confirmPhoneNumber": "9160513671"
+    },
+    {
+      //21.new and confirm passwords are different
+      "test": "AccPasswordDiff",
+      "newPassword": "123456",
+      "confirmPassword": "12345678"
+    },
+    {
+      //22.short password
+      "test": "AccPasswordShort",
+      "password": "12345"
+    },
+    {
+      //23.incorrect password
+      "test": "AccPasswordIncorrect",
+      "password": "12345678"
+    },
+    {
+      //24.correct details  --> enter new password
+      "test": "AccPasswordCorrect",
+      "newPassword": "123456",
+      "confirmPassword": "123456"
+    }
+  ],
+  "AddUserScreen": [
+    {
+      //0.add user login  --> enter same as edited in account page
+      "test": "addUserLogin",
+      "email": "krishnakamera789@gmail.com",
+      "password": "123456"
+    },
+    {
+      //1.changeAlertDelay  -->  2.supervisors 3.caregivers
+      "test": "addUserAlertDelay",
+      "user": "2",
+      "userName": "krishna kris",
+      "delay": "15"
+    },
+    {
+      //2.first name Less than 2 characters
+      "test": "addUserFNLessChars",
+      "firstName": "k"
+    },
+    {
+      //3.first name Contains symbols, numbers, spaces, emojis
+      "test": "addUserFNSymbols",
+      "firstName": "krishna1@"
+    },
+    {
+      //4.last name Less than 2 characters
+      "test": "addUserLNLessChars",
+      "lastName": "k"
+    },
+    {
+      //5.last name Contains symbols, numbers, spaces, emojis
+      "test": "addUserLNLessChars",
+      "lastName": "kr&51"
+    },
+    {
+      //6.Phone number Length less than 10
+      "test": "addUserPhoneLessDigits",
+      "phoneNumber": "966554386"
+    },
+    {
+      //7.Phone number Length should be 10
+      "test": "addUserPhoneShould10",
+      "phoneNumber": "9665543832"
+    },
+    {
+      //8.Phone contains symbols, letters, spaces, emojis
+      "test": "addUserPhoneWithSymbols",
+      "phoneNumber": "9 6@54a862"
+    },
+    {
+      //9.Email Doesn't contain an @ symbol
+      "test": "addUserEmailNo@",
+      "email": "krishna.kcelllabs.com"
+    },
+    {
+      //10.Doesn't contain a .
+      "test": "addUserEmailNo.",
+      "email": "krishna.k@celllabscom"
+    },
+    {
+      //11.All valid information enter, user clicks button for Supervisor
+      "test": "addUserValidSupervisor",
+      "firstName": "selenium",
+      "lastName": "user",
+      "phoneNumber": "9665543834",
+      "email": "krishna123@cel  llabs.com"
+    },
+    {
+      //12.All valid information enter, user clicks button for Caregiver
+      "test": "addUserValidCaregiver",
+      "firstName": "selenium",
+      "lastName": "test",
+      "phoneNumber": "9665543835",
+      "email": "krishna1234@celllabs.com"
+    },
+    {
+      //13.Valid information is filled out, but user clicks back button
+      "test": "addUserValidCaregiver",
+      "firstName": "selenium",
+      "lastName": "new",
+      "phoneNumber": "9665543836",
+      "email": "krishna1235@celllabs.com"
+    }
+  ],
+  "EditUserScreen": [
+    {
+      //0.select User   --> userType => supervisor 2, caregiver 3
+      "test": "selectUser",
+      "userName": "selenium user",
+      "userType": "2",
+      "firstName": "selenium",
+      "lastName": "user",
+      "phoneNumber": "9665543834",
+      "email": "krishna123@celllabs.com"
+    },
+    {
+      //1.first name with less than 2 characters
+      "test": "editUserFirstNameLessChars",
+      "firstName": "k"
+    },
+    {
+      //2.first name Contains symbols, numbers, spaces, emojis
+      "test": "editUserFirstNameSymbols",
+      "firstName": "kri*sh@a"
+    },
+    {
+      //3.last name with less than 2 characters
+      "test": "editUserLastNameLessChars",
+      "lastName": "k"
+    },
+    {
+      //4.last name Contains symbols, numbers, spaces, emojis
+      "test": "editUserLastNameSymbols",
+      "lastName": "tes$754"
+    },
+    {
+     //5.phone number should be 10
+      "test": "editUserPhoneShould10",
+      "phoneNumber": "9373454892"
+    },
+    {
+      //6.phone number Contains symbols, letters, spaces, emojis
+      "test": "editUserPhoneSymbols",
+      "phoneNumber": "937@3454$2"
+    },
+    {
+      //7.email Doesn't contain an @ symbol
+      "test": "editUserPhoneSymbols",
+      "email": "super.testgmail.com"
+    },
+    {
+      //8.email Doesn't contain a .
+      "test": "editUserPhoneSymbols",
+      "email": "super.test@gmailcom"
+    },
+    {
+      //9.All valid information enter, user clicks button --> enter some changes
+      "test": "editUserValidInfo",
+      "firstName": "seleniums",
+      "lastName": "users",
+      "phoneNumber": "9665543838",
+      "email": "krishna123@celllabs.com"
+    },
+    {
+      //10.Information is changed and then changed back
+      "test": "editUserChangedDetails",
+      "firstName": "seleniumtest",
+      "lastName": "usersinfo",
+      "phoneNumber": "9665543839",
+      "email": "krishna345@celllabs.com"
+    }
+  ],
+  "FirstTimeUserScreen": [
+    {
+      //0.Existing email address
+      "test": "firstUserExistEmail",
+      "email": "pranay.prasad@celllabs.com"
+    },
+    {
+      //1.Non-existent email address
+      "test": "firstUserNonExistEmail",
+      "email": "pranay.prasad@celllabs.com"
+    },
+    {
+      //2.Improperly formatted email address
+      "test": "firstUserImproperEmail",
+      "email": "pranay.prasadcelllabs.com"
+    },
+    {
+      //3.Correct email address  --> enter user email you created
+      "test": "firstUserCorrectEmail",
+      "email": "krishna123@celllabs.com"
+    },
+    {
+      //4.Existing phone number
+      "test": "firstUserExistPhone",
+      "phoneNumber": "8986559654"
+    },
+    {
+      //5.Non-existent phone number
+      "test": "firstUserExistPhone",
+      "phoneNumber": "8986559654"
+    },
+    {
+      //6.Improperly formatted phone number
+      "test": "firstUserImproperPhone",
+      "phoneNumber": "8&9865@345"
+    },
+    {
+      //7.Correct phone number
+      "test": "firstUserCorrectPhone",
+      "phoneNumber": "9665543838"
+    },
+    {
+      //8.passwords don't match case
+      "test": "firstUserPwdMismatch",
+      "password": "123456",
+      "confirmPassword": "12345678"
+    },
+    {
+      //9.Passwords match but are fewer than 6 characters
+      "test": "firstUserPwdLessChars",
+      "password": "12345",
+      "confirmPassword": "12345"
+    },
+    {
+      //10.passwords match case
+      "test": "firstUserPwdMatch",
+      "password": "123456",
+      "confirmPassword": "123456"
+    }
+  ]
+}

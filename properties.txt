@@ -1,0 +1,25 @@
+## LoginScreen  ##
+#wrong password and correct email
+email = pranay.prasad@celllabs.com
+password1 = 123456
+
+#email without @
+email = pranay.prasad@celllabs.com
+password1 = 123456
+
+#email without .
+email2 = pranay.prasad@celllabs.com
+password2 = 123456
+
+## ForgotScreen  ##
+#Wrong name, correct phone & email
+email3 = pranay.prasad@celllabs.com
+password3 = 123456
+
+#Wrong phone, correct name & email
+email4 = pranay.prasad@celllabs.com
+password4 = 123456
+
+#passwords don't match
+
+#Passwords match but are fewer than 6 characters
