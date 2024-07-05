@@ -42,11 +42,11 @@ public class AllUnitTest {
         System.out.println("reading completed....");
 
         //login screen
-        //LoginPageTest.testLoginScreenFont();
-        //LoginPageTest.testLoginScreen();
+        LoginPageTest.testLoginScreenFont();
+        LoginPageTest.testLoginScreen();
 
         //forgot screen
-        //LoginPageTest.testForgotPasswordTest();
+        LoginPageTest.testForgotPasswordTest();
 
         //account page
         AccountTest.testClickAccountPage();

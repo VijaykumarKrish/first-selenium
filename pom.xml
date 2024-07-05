@@ -253,6 +253,9 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/resources/testing.xml</suiteXmlFile>
                     </suiteXmlFiles>
+                    <systemPropertyVariables>
+                        <configFile>${config.file}</configFile>
+                    </systemPropertyVariables>
                 </configuration>
             </plugin>
 

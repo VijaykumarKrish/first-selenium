@@ -54,11 +54,11 @@ public class CommonTest {
         }
     }
     public static void readFromJsonFile(String filePath){
-
+        String configFile = System.getProperty("configFile");
         ObjectMapper objectMapper = new ObjectMapper(new JsonFactory().enable(JsonParser.Feature.ALLOW_COMMENTS));
 
         try {
-            TestData testData = objectMapper.readValue(new File(filePath), TestData.class);
+            TestData testData = objectMapper.readValue(new File(configFile), TestData.class);
             TestData.setUserData(testData);
         } catch (IOException e) {
             log.error("Exception ",e);
